@@ -10,13 +10,23 @@
 </head>
 <body class="body page-adoptar clearfix">
   <a href="select.html" class="text titleadopt">aDoptia</a>
-  <form id="adopt" class="adopt clearfix js-adopt" action="adoptar.php" method="post">
+  <form id="adopt" class="adopt clearfix js-adopt" action="proba.php" method="post">
+    <label class="radio-label radio-label-1 clearfix">
+      <span class="point-text">Perr@</span>
+      <input id="animal" class="radio js-animal" name="animal" value="perro" type="radio">
+    </label>
+    <label class="radio-label radio-label-2 clearfix">
+      <span class="point-text">Gat@</span>
+      <input id="animal" class="radio js-animal" name="animal" value="gato" type="radio">
+    </label>
     <p class="text hld text-21">Horas Libres Diarias:</p>
-    <input id="hld" class="hld hld-3 js-hld" name="hld" type="text">
+    <input id="hld" class="hld hld-3 js-hld" name="hld" type="text" required="hld">
     <p class="text post">Codigo Postal:</p>
-    <input id="postal" class="postal js-postal" name="postal" type="text">
-    <button id="animal" value="gato" class="gat js-gatsearch" type="submit">Gat@</button>
-    <button id="animal" value="perro" class="gos js-gossearch" type="submit">Perr@</button>
+    <input id="postal" class="postal js-postal" name="postal" type="text"  >
+    
+
+    <button id="animal"  class="gat js-gatsearch" type="submit">aDopta!</button>
+    
   </form>
 
   <script src="js/jquery-min.js"></script>
